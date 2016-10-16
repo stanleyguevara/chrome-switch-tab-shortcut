@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Switch Tab Shortcut",
+    "permissions": [
+          "tabs"
+        ],
+    "version": "1.0",
+    "description": "Customize chrome shortcut to switch tabs",
+    "commands": {
+          "next-tab": {
+            "suggested_key": {
+              "default": "Ctrl+Right",
+              "mac": "Command+Right"
+            },
+            "description": "Next tab"
+          },
+          "prev-tab": {
+            "suggested_key": {
+              "default": "Ctrl+Left",
+              "mac": "Command+Left"
+            },
+            "description": "Prev tab"
+          }
+        },
+    "background": {
+      "scripts": ["main.js"],
+      "persistent": false
+    }
+}
